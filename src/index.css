@@ -1,13 +1,85 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+	padding: 0 1rem;
+}
+
+.content {
+	min-height: calc(100vh - 134px);
+	padding: 1.5rem;
+}
+
+.items {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1rem;
+}
+
+.price {
+	font-size: 1.6rem;
+}
+
+.rarity,
+.card-content {
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.cart {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	cursor: pointer;
+	z-index: 5;
+	padding: 1rem;
+}
+
+@media(min-width:767px) {
+	.cart {
+		top: 5rem;
+		bottom: unset;
+	}
+}
+
+
+.cart-list {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	background-color: white;
+	width: 50rem;
+	max-width: 95%;
+}
+
+.card-image{
+	background-color: lightgray;
+}
+
+.close-icon {
+	cursor: pointer;
+}
+
+.order {
+	position: fixed;
+	height: 33px;
+	right: 1rem;
+	bottom: 4px;
+	font-size: 12px;
+}
+
+.preload {
+	margin-top: calc(928px /2);
 }
