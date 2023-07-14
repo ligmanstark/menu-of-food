@@ -11,8 +11,7 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Contacts } from './pages/Contacts';
 import { NotFoud } from './pages/NotFound';
-import { Movie } from './pages/Movie';
-import { Wava } from './pages/Wava';
+import { Category } from './pages/Category';
 
 function App() {
 	return (
@@ -26,9 +25,8 @@ function App() {
 						</Route>
 						<Route path="/about" element={<About />} />
 						<Route path="/contacts" element={<Contacts />} />
-						<Route path="/movies/:title" element={<Movie />} />
+						<Route path="/category/:nameCategory" element={<Category />} />
 						<Route path="*" element={<NotFoud />} />
-						<Route path="/Wava" element={<Wava />} />
 					</Routes>
 					<Outlet />
 				</main>

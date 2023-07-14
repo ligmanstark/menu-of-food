@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const CategoryItem = (props) => {
 	const {
 		idCategory,
@@ -17,9 +19,9 @@ const CategoryItem = (props) => {
 				</p>
 			</div>
 			<div className="card-action">
-				<a className="btn" href="#">
+				<Link to={`/category/${nameCategory}`} className="btn">
 					Watch Category
-				</a>
+				</Link>
 			</div>
 		</div>
 	);
