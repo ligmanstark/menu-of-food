@@ -3,7 +3,6 @@ import {
 	Routes,
 	Route,
 	Outlet,
-
 } from 'react-router-dom';
 import { Header } from './layout/Header';
 import { Footer } from './layout/Footer';
@@ -21,10 +20,10 @@ function App() {
 			<Router>
 				<Header />
 				<main className="container content">
-				
-
 					<Routes>
-						<Route path="/" element={<Home />}></Route>
+						<Route path="/" element={<Home />}>
+							<Route path="/menu-of-food" element={<Home />} />
+						</Route>
 						<Route path="/about" element={<About />} />
 						<Route path="/contacts" element={<Contacts />} />
 						<Route path="/movies/:title" element={<Movie />} />
