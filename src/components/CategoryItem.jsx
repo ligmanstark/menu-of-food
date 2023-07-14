@@ -3,7 +3,7 @@ const CategoryItem = (props) => {
 		idCategory,
 		strCategory: nameCategory,
 		strCategoryThumb: imageCategory,
-		strCategoryDescription: description,
+		strCategoryDescription: descriptionCategory,
 	} = props;
 	return (
 		<div className="card" key={idCategory}>
@@ -12,11 +12,15 @@ const CategoryItem = (props) => {
 			</div>
 			<div className="card-content">
 				<span className="card-title">{nameCategory}</span>
-				<p className="card-description">{description.slice(0,40)}...</p>
-            </div>
-            <div className="card-action">
-                <a className="btn" href="#">Watch Category</a>
-            </div>
+				<p className="card-description">
+					{descriptionCategory.slice(0, 40)}...
+				</p>
+			</div>
+			<div className="card-action">
+				<a className="btn" href="#">
+					Watch Category
+				</a>
+			</div>
 		</div>
 	);
 };
