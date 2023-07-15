@@ -1,10 +1,16 @@
 import { RecipeItem } from './RecipeItem';
 
 const RecipeList = (props) => {
-    const { } = props;
-    return <>
-        <h2>heello bros</h2>
-    </>
+	const { recipes = [] } = props;
+	return (
+		<>
+			<div className="list">
+				{recipes.map((recipe) => (
+					<RecipeItem key={recipe.idMeal} {...recipe} />
+				))}
+			</div>
+		</>
+	);
 };
 
 export { RecipeList };

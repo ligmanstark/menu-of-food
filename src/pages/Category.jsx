@@ -20,7 +20,7 @@ const Category = () => {
 	return (
 		<>
 			<h1>{nameCategory}</h1>
-			{!recipes.length ? <Preloader /> : <RecipeList />}
+			{!recipes.length ? <Preloader /> : <RecipeList recipes={recipes} />}
 			<button className="btn" onClick={() => navigate(-1)}>
 				Go Back
 			</button>
