@@ -43,3 +43,27 @@ nav {
 	line-height: 32px;
 	margin-bottom: 8px;
 }
+
+.list-config {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.card-config {
+	display: flex;
+	flex-direction: row;
+}
+
+.card-image-config {
+	width: 918px;
+    position: relative;
+    margin: 16px;
+    margin-top: 68px;
+}
+
+iframe{
+	width: 600px;
+	height: 350px;
+}

@@ -1,6 +1,8 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { getMealById } from '../api';
 import { useState, useEffect } from 'react';
+import { Preloader } from '../layout/Preloader';
+import { RecipeShow } from '../components/recipeshow/RecipeShow';
 
 const Recipe = () => {
 	const { idMeal } = useParams();
@@ -16,7 +18,7 @@ const Recipe = () => {
 
 	return (
 		<>
-			<h1>Hello from meal</h1>
+			{!recipe.length ? <Preloader /> : <RecipeShow recipe={recipe} />}
 			<button className="btn" onClick={() => navigate(-1)}>
 				Go Back
 			</button>
