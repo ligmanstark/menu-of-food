@@ -1,4 +1,6 @@
 {
+	"name": "menu-of-food",
+	"homepage": "https://ligmanstark.github.io/menu-of-food/",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {

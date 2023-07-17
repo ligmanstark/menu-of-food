@@ -17,7 +17,7 @@ import { Recipe } from './pages/Recipe';
 function App() {
 	return (
 		<>
-			<Router>
+			<Router basename="/menu-of-food">
 				<Header />
 				<main className="container content">
 					<Routes>
