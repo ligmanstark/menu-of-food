@@ -67,3 +67,21 @@ iframe{
 	width: 600px;
 	height: 350px;
 }
+
+@media(max-width:426px){
+	iframe{
+		width: 360px;
+	}
+	.card-image-config{
+		margin-top: 100px;
+	}
+}
+
+@media(max-width:375px){
+	iframe{
+		width: 300px;
+	}
+	.card-image-config{
+		margin-top: 134px;
+	}
+}
