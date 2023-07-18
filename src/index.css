@@ -57,7 +57,7 @@ nav {
 }
 
 .card-image-config {
-	width: 918px;
+	min-width: 120px;
     position: relative;
     margin: 16px;
     margin-top: 68px;
