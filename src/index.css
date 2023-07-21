@@ -58,30 +58,58 @@ nav {
 
 .card-image-config {
 	min-width: 120px;
-    position: relative;
-    margin: 16px;
-    margin-top: 68px;
+	position: relative;
+	margin: 16px;
+	margin-top: 68px;
 }
 
-iframe{
+iframe {
 	width: 600px;
 	height: 350px;
 }
 
-@media(max-width:426px){
-	iframe{
+@media(max-width:700px) {
+	iframe {
+		width: 480px;
+	}
+
+	.card-image-config {
+		margin-top: 134px;
+	}
+}
+
+@media(max-width:540px) {
+	iframe {
 		width: 360px;
 	}
-	.card-image-config{
+
+	.card-image-config {
 		margin-top: 100px;
 	}
 }
 
-@media(max-width:375px){
-	iframe{
-		width: 300px;
+@media(max-width:400px) {
+	iframe {
+		width: 260px;
 	}
-	.card-image-config{
+
+	.card-image-config {
 		margin-top: 134px;
+	}
+}
+
+@media(max-width:330px) {
+	iframe {
+		width: 260px;
+	}
+
+	.card-image-config {
+		margin-top: 134px;
+	}
+	.card-content{
+		padding: 0;
+	}
+	.card-config{
+		flex-direction: column;
 	}
 }
