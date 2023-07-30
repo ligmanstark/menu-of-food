@@ -12,7 +12,6 @@ const Recipe = () => {
 	useEffect(() => {
 		getMealById(idMeal).then((data) => {
 			setRecipe(data.data.meals);
-			console.log(data.data.meals);
 		});
 	}, [idMeal]);
 

@@ -13,7 +13,6 @@ const Category = () => {
 	useEffect(() => {
 		getFilteredCategory(nameCategory).then((data) => {
 			setRecipes(data.data.meals);
-			console.log(data.data.meals);
 		});
 	}, [nameCategory]);
 
